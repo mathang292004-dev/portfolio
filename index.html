@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathankumar G - DevOps Engineer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset & Base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f7f7f7;
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* Header */
+        header {
+            background-color: #1e1e2f;
+            color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        header h2 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: #a0a0c0;
+        }
+
+        /* Container */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 50px auto;
+        }
+
+        /* Section Titles */
+        h3.section-title {
+            color: #1e1e2f;
+            margin-bottom: 20px;
+            font-size: 2rem;
+            border-bottom: 3px solid #4f46e5;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        /* Summary */
+        .summary p {
+            margin-bottom: 15px;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 50px;
+        }
+        .skill-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease;
+        }
+        .skill-card:hover {
+            transform: translateY(-5px);
+        }
+        .skill-card h4 {
+            margin-bottom: 10px;
+            color: #4f46e5;
+        }
+
+        /* Projects */
+        .projects {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        .project {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease;
+        }
+        .project:hover {
+            transform: translateY(-5px);
+        }
+        .project img {
+            width: 300px;
+            object-fit: cover;
+        }
+        .project-details {
+            padding: 20px;
+            flex: 1;
+        }
+        .project-details h4 {
+            color: #4f46e5;
+            margin-bottom: 10px;
+        }
+        .project-details p {
+            margin-bottom: 10px;
+        }
+        .project-details ul {
+            margin-left: 20px;
+            list-style-type: disc;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e1e2f;
+            color: #fff;
+        }
+
+        /* Responsive */
+        @media(max-width: 768px){
+            .project {
+                flex-direction: column;
+            }
+            .project img {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Mathankumar G</h1>
+        <h2>DevOps Engineer</h2>
+    </header>
+
+    <!-- Container -->
+    <div class="container">
+
+        <!-- Summary -->
+        <section class="summary">
+            <h3 class="section-title">Summary</h3>
+            <p>Skilled DevOps Engineer with 3+ years of experience in CI/CD, monitoring, and cloud infrastructure optimization.</p>
+            <p>Expert in Dynatrace for monitoring, performance optimization, and incident management in production environments.</p>
+            <p>Proficient in AWS (EC2, S3, RDS, Cognito), containerization with Docker & Kubernetes, CI/CD pipelines, Infrastructure as Code (Terraform, CloudFormation), and automation scripting with PowerShell.</p>
+        </section>
+
+        <!-- Technical Skills -->
+        <section class="skills">
+            <h3 class="section-title">Technical Skills</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h4>AWS</h4>
+                    <p>EC2, S3, Lambda, RDS, ELB, Auto-scaling, Route53, VPC, IAM, ECR, EKS, VPN, KMS, SNS, SES</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Web Servers</h4>
+                    <p>Nginx, Apache</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Databases</h4>
+                    <p>MySQL, PostgreSQL, MongoDB, AWS RDS</p>
+                </div>
+                <div class="skill-card">
+                    <h4>CI/CD</h4>
+                    <p>Jenkins, GitHub Actions, GitLab, CodePipeline</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Containerization</h4>
+                    <p>Docker, Kubernetes, EKS</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Monitoring</h4>
+                    <p>Dynatrace, Grafana, Prometheus</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Infrastructure as Code</h4>
+                    <p>Terraform, CloudFormation, Ansible</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Version Control</h4>
+                    <p>GitHub, GitLab, Bitbucket</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Operating Systems</h4>
+                    <p>Linux, Windows</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="projects">
+            <h3 class="section-title">Projects</h3>
+
+            <!-- Project 1 -->
+            <div class="project">
+                <img src="https://via.placeholder.com/300x200.png?text=Mikloset" alt="Mikloset Project Image">
+                <div class="project-details">
+                    <h4>Mikloset</h4>
+                    <p><strong>Technologies:</strong> Apache, WordPress, PHP, MySQL, AWS EC2, AWS ALB, SSL (Certbot), Linux</p>
+                    <p><strong>Description:</strong> AI-powered fashion and wardrobe management platform with personalized outfit recommendations and social sharing features.</p>
+                    <p><strong>Responsibilities:</strong></p>
+                    <ul>
+                        <li>Managed development & production deployments ensuring minimal downtime.</li>
+                        <li>Configured Apache VirtualHosts & SSL/TLS using Certbot.</li>
+                        <li>Deployed & maintained WordPress on AWS EC2 with reverse-proxy compatibility using ALB.</li>
+                        <li>Managed MySQL database and Linux server permissions.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project">
+                <img src="https://via.placeholder.com/300x200.png?text=GAMERSQUAD" alt="Gamersquad Project Image">
+                <div class="project-details">
+                    <h4>GAMERSQUAD</h4>
+                    <p><strong>Technologies:</strong> Amazon S3, EC2, DocumentDB, GitHub, Elastic Beanstalk / Fargate, Terraform</p>
+                    <p><strong>Description:</strong> Matchmaking app for online/offline games allowing users to find gaming partners by region. Available on Android & iOS.</p>
+                    <p><strong>Responsibilities:</strong></p>
+                    <ul>
+                        <li>Deployed web applications using AWS Elastic Beanstalk.</li>
+                        <li>Implemented CI/CD pipelines with GitHub Actions.</li>
+                        <li>Managed secrets, SSL/TLS certificates, and secure VPC access.</li>
+                        <li>Optimized performance using Amazon ElastiCache and managed storage on S3 & DocumentDB.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Mathankumar G | DevOps Engineer | <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+    </footer>
+
+</body>
+</html>
